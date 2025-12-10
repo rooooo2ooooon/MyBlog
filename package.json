@@ -1,0 +1,31 @@
+{
+  "name": "my-blog",
+  "version": "0.1.0",
+  "description": "ブログAPIと執筆者用/読者用Webアプリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rooooo2ooooon/MyBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rooooo2ooooon/MyBlog/issues"
+  },
+  "homepage": "https://github.com/rooooo2ooooon/MyBlog#readme",
+  "devDependencies": {
+    "prisma": "^7.1.0"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.1.0",
+    "@prisma/client": "^7.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.16.3"
+  }
+}
