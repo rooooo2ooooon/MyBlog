@@ -41,8 +41,8 @@ model Comment {
   content         String
   postAt          DateTime
   lastUpdateAt    DateTime?
-  commenterId     Int
-  commenter       User      @relation(fields: [commenterId], references: [id])
+  commenterId     Int?
+  commenter       User?     @relation(fields: [commenterId], references: [id])
   parentPostId    Int
   parentPost      Post      @relation(fields: [parentPostId], references: [id])
   parentCommentId Int?
