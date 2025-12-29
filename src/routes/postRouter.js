@@ -7,7 +7,7 @@ postRouter.post("/", (req, res) => {
 });
 postRouter.get("/:postId", (req, res) => {
     const { postId } = req.params;
-    res.send(`show post ${postId}`);
+    res.json({ postId: parseInt(postId) });
 });
 postRouter.put("/:postId", (req, res) => {
     const { postId } = req.params;
