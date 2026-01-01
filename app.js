@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-const postRouter = require("./src/routes/postRouter");
+const apiRouter = require("./src/routes/api/indexRouter");
 
-app.use("/posts", postRouter);
+app.use("/api", apiRouter);
 
 const PORT = 3000;
 app.listen(PORT, (err) => {
